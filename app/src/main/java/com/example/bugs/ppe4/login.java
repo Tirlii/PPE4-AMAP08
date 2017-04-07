@@ -31,7 +31,7 @@ public class login extends Activity {
         login = text.getText().toString();
         motDePasse = pass.getText().toString();
         ConnexionHTTP connexion = new ConnexionHTTP();
-        connexion.execute("http://10.10.9.135/android/index.php", login, motDePasse);
+        connexion.execute("http://10.10.9.123/android/index.php", login, motDePasse);
         try
         {
             if (connexion.get())
